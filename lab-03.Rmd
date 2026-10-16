@@ -24,6 +24,8 @@ _Note, if nycflights13 in not installed in your system, RStudio might prompt you
 ```{r subset-data}
 jan_feb_flights <- flights %>%
   filter(month %in% c(1, 2))
+glimpse(jan_feb_flights)
+
 ```
 
 ## 1.2 Column Overview
@@ -43,6 +45,7 @@ Are there missing values?
 
 # which columns are double
 
+# 6 dep_delay, arr_delay, air_time, distance, hour, minute
 
 # which columns are character
 
