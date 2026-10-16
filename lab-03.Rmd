@@ -36,7 +36,7 @@ Are there missing values?
 
 ```{r}
 # explore the types of the columns in jan_feb_flights
-
+count()
 ```
 
 ```{r}
@@ -54,7 +54,9 @@ dest, origin,
 
 ```{r}
 # which columns contain NA's
-
+jan_feb_flights %>%
+  summarise(across(everything(),~sum(is.na(.))))%>%
+  unlist%>%sort(decreasing=T)
 ```
 
 **Summary:**  
