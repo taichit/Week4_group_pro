@@ -48,7 +48,7 @@ Are there missing values?
 # 6 dep_delay, arr_delay, air_time, distance, hour, minute
 
 # which columns are character
-
+dest, origin,  
 
 ```
 
